@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>menu</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .div1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+        }
+
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+            grid-column-start: 3;
+        }
+
+        .div3 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+            grid-column-start: 5;
+        }
+
+        /* New style for big text */
+        .tagline {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 32px;
+            font-weight: bold;
+            color: darkred;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="text-align: center; color: rgb(73, 30, 5);">MENU</h1>
+
+    <div class="parent">
+        <div class="div1">
+            <img src="capcunnio.png" alt="menu 1" style="width: 100%; height:auto;">
+        </div>
+        <div class="div2">
+            <img src="choclate coffee.png" alt="menu 2" style="width: 100%; height:auto;">
+        </div>
+        <div class="div3">
+            <img src="cupcake.png" alt="menu 3" style="width: 100%; height:auto;">
+        </div>
+    </div>
+
+    <!-- Big text below all images -->
+    <div class="tagline">Choose Your Best and Enjoy Your Meal!</div>
+</body>
+</html>
